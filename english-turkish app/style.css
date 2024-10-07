@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+h1{
+    font-size: 3rem;
+    color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+.cards{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+h4{
+    display: flex;
+    color:darkseagreen;
+    font-size: 2rem;
+    justify-content: center;
+    margin: 1rem;
+    margin-bottom: 4rem;
+    background-color: rgb(12, 89, 156);
+}
+.card{
+    border: solid 3px black;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: rgb(12, 89, 156);
+}
+input{
+    border-radius: .5rem;
+    background-color: rgb(138, 158, 175);;
+    border: solid black 2px;
+    padding: .5rem;
+    color: rgb(0, 0, 0);   
+}
+.form{
+    background-color: rgb(12, 89, 156);;
+}
+.Answer{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+.correct{
+    background-color: green;
+    color: aliceblue;
+}
+.false{
+    background-color: red;
+    color:aliceblue
+}

@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color:dodgerblue;
+}
+h1{
+    text-align: center;
+    margin: 3rem;
+}
+.int{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dates{
+    border: 2px black solid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+    text-align: center;
+    padding-top: .5rem;
+    border-radius: 10px;
+    background-color: rgb(62, 100, 150);
+}
+.btn{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Hesapla{
+    border: 2px black solid;
+    padding: .5rem;
+    text-align: center;
+    color: black; 
+    font-size: large;
+    background-color: rgb(62, 100, 150);
+    border-radius: 15px;
+    transition: ease .5s;
+}
+#Hesapla:hover{
+    background-color: dodgerblue;
+}
+
+.sonuc{
+    text-align: center;
+    padding: 2rem;
+}
+.sonuc .mins{
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+.sonuc .days{
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+.sonuc .hours{
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+.sonuc .year{
+    font-size: 1.5rem;
+    padding: .5rem;
+}
