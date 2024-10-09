@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+.workSelect{
+    display: flex;
+    justify-content: center;
+   
+}
+.input{
+    display: flex;
+    justify-content: center;
+}
+input{
+    padding:.4rem;
+}
+.workSelectoption{
+    display: flex;
+    justify-content: center;
+}
+.workSelectoption ul{
+    margin-right: 4rem;
+    list-style: none;
+}
+h3{
+    display: flex;
+    justify-content: center;
+
+}
+.list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+}
