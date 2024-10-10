@@ -7,11 +7,12 @@ const otherOpt = document.querySelector(".otherOpt");
 
 
 
+
 input.addEventListener("submit" ,e=>{
     e.preventDefault();
     const inpVal = input.inp.value;
     if (inpVal.trim()) {
-        const html = `<span>${inpVal}<span/>`;
+        const html = `<h4 class="del">${inpVal}<h4/>`;
         const li = document.createElement("li");
         li.classList.add("list");
         li.innerHTML = html;
@@ -29,3 +30,10 @@ input.addEventListener("submit" ,e=>{
         
     }
 })
+document.addEventListener("click", e => {
+    e.preventDefault();
+    if (e.target.classList.contains("del")) {
+        e.target.parentElement.remove();
+    }
+})
+

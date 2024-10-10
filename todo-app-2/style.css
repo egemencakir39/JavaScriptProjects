@@ -1,41 +1,77 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: burlywood;
+    background-color: rgb(34, 102, 107);
 }
 h1{
     display: flex;
     justify-content: center;
     margin: 3rem;
+    font-size: 3.5rem;
+    color:rgb(6, 47, 63)
 }
-.workSelect{
+.wrkslct{
+    margin: 1rem;
     display: flex;
     justify-content: center;
-   
+}
+.workSelect{
+    color: white;
+    font-size: 1.2rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color:rgb(14, 94, 126);
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+}
+.workSelect option{
+    color: white;
+    border: 3px solid black;
+    background-color:rgb(14, 94, 126);
+
 }
 .input{
     display: flex;
     justify-content: center;
 }
 input{
+    color: white;
+    background-color:rgb(14, 94, 126);
+    width: 15rem;
+    border: 3px solid black;
+    border-radius: 10px;
     padding:.4rem;
 }
 .workSelectoption{
     display: flex;
     justify-content: center;
+    
 }
-.workSelectoption ul{
-    margin-right: 4rem;
+.workSelectoption ul{  
+    border: 2px solid black;
+    color: white; 
+    font-size: 1.3rem;
+    width: 200px; 
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: rgb(14, 94, 126);
+
 }
 h3{
+    background-color: rgb(14, 94, 126);
     display: flex;
     justify-content: center;
 
 }
 .list{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem;
+    background-color: rgb(14, 94, 126);
+    border-bottom: 1px solid black;
+}
+.list h4{
+    background-color: rgb(14, 94, 126);
+    
 }
