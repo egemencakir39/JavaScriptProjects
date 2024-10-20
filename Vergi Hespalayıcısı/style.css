@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    font-size: 3rem;
+    color: cadetblue;
+}
+.input p{
+    margin: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(128, 62, 38);
+    font-weight: bold;
+}
+label{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
+label input{
+    color: rgb(128, 62, 38);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: rgba(233, 145, 112, 0.644);
+    padding: .4rem 1rem;
+    border: solid black 2px;
+}
+.tax-rate p{
+    margin: 1rem;
+    color: rgb(128, 62, 38);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.tax-rate div{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.tax-rate .tax{
+    color: rgb(128, 62, 38);
+    background-color: rgba(233, 145, 112, 0.644);
+    padding: .4rem 1rem;
+    font-weight: bold;
+    border-radius: .5rem 0rem ;
+    border: solid black 2px;
+}
+.tax option{
+    color: rgb(128, 62, 38);
+    font-weight: bold;
+    background-color: rgba(233, 145, 112, 0.2);
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    margin: 1rem;
+    padding: .5rem 3.2rem;
+    border-radius: .5rem;
+    border: black solid 2px;
+    background-color: rgba(233, 145, 112, 0.644);
+}
+.btn:hover{
+    background-color: cadetblue;
+    transition: ease .5s;
+}
+.totalPrice h4{
+    display: flex;
+    justify-content: center;
+}
+.totalPrice{
+    text-align: center;
+}
+.totalPrice .title{
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: cadetblue;
+}
+.totalPrice p{
+    margin: .5rem;
+}
+
