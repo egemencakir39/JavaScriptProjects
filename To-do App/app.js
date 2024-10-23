@@ -2,24 +2,52 @@ const addlist = document.querySelector(".addList");
 const list = document.querySelector(".list");
 const listChild = document.querySelector(".listChild");
 const search = document.querySelector(".searchBox");
+document.addEventListener("DOMContentLoaded",pageLoaded);
+let todos = [];
 
+    
 addlist.addEventListener("submit", e => {
     e.preventDefault();
-    const todo = addlist.add.value;
+    let todo = addlist.add.value;
     if (todo.trim()) {
         const html = ` <li class="listChild">
                 <span class="del">${todo}</span>`
             list.innerHTML += html;
+            addTodoStorage(todo);
             addlist.reset();
     }
+    
 })
+
+function pageLoaded(){
+    checkTodosFromStorage();
+    todos.forEach(todo1 => {
+        html = ` <li class="listChild">
+        <span class="del">${todo1}</span>`
+    list.innerHTML += html;
+       
+    });
+}
+
 
 list.addEventListener("click",e=>{
     e.preventDefault();
     if (e.target.classList.contains("del")) {
-        e.target.parentElement.remove();
+        const tododel = e.target.parentElement;
+        tododel.remove();
+        removeTodoStorage(tododel.textContent);
     }
 })
+function removeTodoStorage(removeTodo){
+    checkTodosFromStorage();
+    todos.forEach(function(todo,index){
+        if (removeTodo.trim()===todo.trim()) {
+            todos.splice(index,1);
+        }
+            
+    });
+    localStorage.setItem("todos",JSON.stringify(todos));
+}
 
 search.addEventListener("keyup",e=>{
     e.preventDefault();
@@ -28,7 +56,17 @@ search.addEventListener("keyup",e=>{
     Array.from(list.children).filter(todo => todo.textContent.toLowerCase().includes(data)).forEach(todo => todo.classList.remove("filtered"));
 })
 
+function addTodoStorage(newtodo){
+    checkTodosFromStorage();
+    todos.push(newtodo);
+    localStorage.setItem("todos",JSON.stringify(todos));
 
-
-const value = [1,2,3];
-console.log(value.includes(2));
+}
+function checkTodosFromStorage(){
+    if (localStorage.getItem("todos")===null) {
+        todos = [];
+    }
+    else{
+        todos = JSON.parse(localStorage.getItem("todos"));
+    }
+}
