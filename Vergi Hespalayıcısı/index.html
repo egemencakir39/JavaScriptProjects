@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VergiHesaplayıcısı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>KDV HESAPLAYICI</h1>
+    <form class="input">
+        <p>Tutar Giriniz</p>
+        <label>
+            <input type="number" name="inp">
+        </label>
+        
+    </form>
+    <div class="tax-rate">    
+        <p>KDV Oranı</p>
+        <div>
+        <select class="tax">
+            <option value="1">%1 Vergi Oranı</option>
+            <option value="8">%8 Vergi Oranı</option>
+            <option value="10">%10 Vergi Oranı</option>
+            <option value="18">%18 Vergi Oranı</option>
+            <option value="20">%20 Vergi Oranı</option>
+        </select>
+        </div>  
+    </div>
+    <div class="button">
+        <button class="btn">Hesapla</button>
+
+    </div>
+    <div class="totalPrice">
+        <h4></h4>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
