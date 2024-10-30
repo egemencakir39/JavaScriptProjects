@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(120, 175, 36);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    font-size: 2.5rem;
+}
+.input-box{
+    display: flex;
+    justify-content: center;
+}
+.inp1{
+    margin-right: 1.5rem;
+    padding: .4rem 1.3rem;
+    background-color: rgb(66, 97, 19);
+    border: 2px solid black;
+    border-radius: .3rem;
+    text-align: center;
+    color: white;
+}
+.inp2{
+    margin-left: 1.5rem;
+    padding: .4rem 1.3rem;
+    background-color: rgb(66, 97, 19);
+    border: 2px solid black;
+    border-radius: .3rem;
+    text-align: center;
+    color: white;
+
+}
+
+.inp1::placeholder,.inp2::placeholder{
+    color: white;
+    text-align: center;
+}
+.button-box{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.income{
+    background-color: rgb(66, 97, 19);
+    border: solid 2px black;
+    color: white;
+    border-radius: .3rem;
+    margin-right: 5.5rem;
+    padding: .3rem .8rem;
+}
+.expense{
+    background-color: rgb(66, 97, 19);
+    border: solid 2px black;
+    color: white;
+    border-radius: .3rem;
+    padding: .3rem .8rem;
+    margin-left: 5.5rem;
+}
+.list1{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.incomes-list,.expense-list{   
+    list-style: none;
+    text-align: center;
+}
+.incomes-list h3,.expense-list h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
