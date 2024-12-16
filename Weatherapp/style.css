@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(125, 147, 221);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    color: rgb(233, 233, 117);
+}
+.inp{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+input , #INP{
+    padding: .5rem;
+    margin-right: 2rem;
+    border: solid 2px black;
+    border-radius: .3rem;
+    font-size: 1rem;
+    color: rgb(233, 233, 117);
+}
+button{
+    padding: .5rem;
+    border: solid 2px black;
+    border-radius: .3rem;
+    color: rgb(233, 233, 117);
+}
+.city,.temp,.desc,.clouds{
+    color: rgb(233, 233, 117);
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 400px;
+    width: 400px;
+    display: none;
+}
